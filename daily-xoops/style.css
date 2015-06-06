@@ -1,0 +1,316 @@
+/*  
+Author Original: Donny Burnside
+Author URI: http://www.ginger-ninja.net/
+Modified for Xoops by Kris
+URI : http://www.xoofoo.org
+*/
+
+@import url(forms.css);
+@import url(blocks.css);
+@import url(content.css);
+
+* { margin:0; padding:0; color:#404040}
+html, body {
+	background:				#000000;
+	font:								10px;
+	color:							#555;
+	text-align:						left;
+	font-family: "Courier New", Courier, monospace;
+}
+table { width: 					100%;}
+table td {
+	padding: 						0;
+	border-width: 					0;
+	vertical-align: 				top;
+}
+#xo-canvas {
+	width:							98%;
+	margin:							0 auto;
+	padding:							50px 0;
+	background-image: url(img/images/papier_journal.jpg);
+	padding-top: 50px;
+	border: 1px solid #000000;
+	;
+}
+body.theme-dialog #xo-canvas {
+	margin:							0px 6px;
+}
+
+/* ---------- Bannières ---------- */
+#xo-banner {
+	height:							170px;
+	margin-bottom:					10px;
+	margin-top: 0px;
+	width: 90%;
+	border: 1px solid #000000;
+	margin-left: 50px;
+}
+#xo-banner.commercial {}
+body.theme-dialog #xo-banner {
+	padding-top:					6px;
+	padding-left:					10px;
+	height:							48px;
+}
+/* Keep the ad img centered by using auto-margins and centeredcontainer/leftalignedchild on MSIE */
+#xo-banner-ad {
+	position: 						absolute;
+	top:								55px;
+	right:								10%;
+	width:							50%;
+	height:							72px;
+	background:						url(img/bg-ad-top.png) no-repeat;
+	padding:							6px;
+
+}
+#xo-banner-foot {
+	position: 						absolute;
+	top:								125px;
+	right:								17%;
+	width:							50%;
+	height:							45px;
+	background:						url(img/images/deco_titre.png) no-repeat;
+	padding:							6px;
+	background-position: center;
+}
+#xo-banner-ad object, #xo-banner-ad img {
+	display:							block;
+}
+
+/*---------------------- Nom du site dans le header ----------------------------*/
+#xo-site-title {
+	color: #000000;
+	background-color: 			transparent;
+}
+#xo-site-title .commercial a:hover {
+	color:							#EAAD7B;
+
+}
+h1 #xo-site-title {
+	position:						relative;
+	top:							0px;
+	left:							15px;
+	font-weight:					normal;
+	font-family:					Geneva, Arial, Helvetica, sans-serif;
+	font-size:						1.6em;	
+}
+#xo-site-title.commercial {
+	clear:							both;
+	position:						relative;
+	top:								5%;
+	left:								15px;
+	text-decoration: 				none;
+	font-size: 						1.6em;
+	font-weight: 					bold;
+ }
+/*----------------------- titre du slogan du site dans le header ------------------------*/
+#xo-site-slogan {
+	color: 							#666666;
+	font-style: 					italic;
+	padding-left: 					10px;
+	background-color: 			transparent;
+	padding-top: 5px;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+#xo-site-slogan.commercial {
+	position:						relative;
+	top:								0px;
+	left:								55px;}
+
+/*------------------------ Affichage du logo ----------------------------*/
+#xo-main-logo {
+	top:								5px;
+	left:								10px;
+	padding-left: 					10px;
+	background-color: 			transparent;
+	}
+#xo-main-logo.commercial {
+	position:						relative;
+	top:								0px;
+	left:								10px;
+	}
+/*-------- Affichage des champs de saisie dans le header-----------*/
+#xo-banner form {
+	margin:							0px;
+	display:							inline;
+}
+#xo-banner input {
+	color:							#333;
+	width:							8em;
+	background-color:				transparent;
+	margin:							0px 0px 0px 2px;
+}
+
+/*============== Styles pour l'include userbar.html =================*/
+#xo-userbar {
+	color:							#000000;
+	position:						absolute;
+	top: 								150px;
+	right: 							10px;
+	text-align:						right;
+	background-color: 			transparent;
+	font-size: 0.9em;
+	font-weight: bold;
+	margin-right: 220px;
+	margin-top: 30px;
+}
+#xo-userbar form {
+	display:							inline;
+	padding:							0px;
+}
+#xo-userbar button {
+	margin: 							0px -3px;
+	border:							0px none;
+	padding:							0px;
+	background:						transparent none;
+}
+#xo-userbar .formbutton {width:auto;}
+#xo-userbar button img {
+	width: 							16px;
+	height: 							16px;
+ }
+#xo-userbar img {
+	width: 							16px;
+	height: 							16px;
+}
+#xo-userbar input {
+	border:							1px solid #000333;
+	color:							#404040;
+	background-color: 			transparent;
+}
+#xo-userbar a {
+	background-color: 			inherit;
+	color: 							#404040 !important;
+}
+#xo-uname {
+	color:							#000000;
+	font-size:						0.9em;
+	font-weight:					bold;
+	background: 					inherit;
+	font-style: italic;
+}
+
+/*============= Style pour l'include globalnav.html ================*/
+#xo-globalnav {
+	color: 							#6B5D49;
+	margin:							0px;
+	padding:							2px 45px 0px;
+	min-height:						20px;
+	font-size:						0.9em;
+	font-weight: 					bold;
+	list-style-type:				none;
+	text-transform: 				uppercase;
+	background-color: 			inherit;
+}
+* html #xo-globalnav { height: 20px; }
+
+#xo-globalnav .x2-label {
+	display:							none;
+}
+#xo-globalnav li {
+	font-size: 						.8em;
+	display:							inline;
+	margin:							0px;
+	padding-left:					.5em;
+	padding-right:					.5em;
+}
+#xo-globalnav a {
+	color: 							#6B5D49!important;
+	text-decoration:				none;
+	background: 					inherit;
+}
+#xo-globalnav a:hover {
+	color:							#000000!important;
+	text-decoration:				none;
+	background: 					inherit;
+	border-top: 5px solid #404040;
+}
+
+/*=============== Affichage Pied de page - Footer  ====================*/
+#xo-footer {
+	clear:							both;
+	padding:							10px 0;
+	font-size:						11px;
+	text-align:						center;
+	line-height:					16px;
+	color:							#999;
+	font-weight:					bold;
+	background-image: url(img/images/content5.png);
+	background-repeat: repeat;
+}
+body.theme-dialog #xo-footer { padding: .2em .5em; font-size:	.8em;}
+#xo-footer a {}
+#xo-footer a:hover {}
+/*================= Zone de contenu ===================*/
+#xo-canvas-content {
+	color:							#666;
+	padding:							12px;
+	background-color: 			inherit;
+}
+#xo-page {
+	margin-left:					190px;
+	min-height:						450px;
+}
+#xo-canvas-rightcolumn {padding: 2px;}
+#xo-content {
+	clear:							both;
+	padding:							0.5em;
+	margin:							0px;
+	color:							#333;
+	background-color:				inherit;
+	background-image: url(img/content3.png);
+}
+
+#xo-logger-output {font-size:	.8em;}
+
+/*========== Menu principal dans bloc =============*/
+#mainmenu a {
+	display: 						block;
+	margin: 							0;
+	padding: 						1px;
+	font-weight: 					700;
+	font-size: 						0.9em;
+}
+#mainmenu a:hover {
+	text-decoration:				none !important;
+}
+#mainmenu a.menuTop, #mainmenu a.menuMain {padding-left: 8px; }
+#mainmenu a.menuSub {
+	color:							#404040;
+	padding-left: 					20px;
+	font-size:						.8em;
+	font-style: 					italic;
+	background-color:				inherit;
+}
+#mainmenu a.menuSub:hover {
+	color:							#000000;
+	background-color: 			inherit;
+}
+
+/*============ Menu utilisateur dans bloc ============*/
+#usermenu a {
+	display: 						block;
+	margin: 							0;
+	padding: 						2px 2px 2px 10px;
+	color:							#404040;
+	font-weight: 					normal;
+	font-size: 						0.9em;
+	line-height: 					1em;
+	background-color: 			inherit;
+}
+#usermenu a:hover {
+	color:							#000000;
+	padding-left: 					20px;
+	font-style: 					italic;
+	text-decoration:				none !important;
+	background-color: 			inherit;
+}
+#usermenu a.menuTop {}
+#usermenu a.highlight {
+	background-color: 			#333;
+	color: 							#ccc;
+}
+
+/*=========== Règles nécessaires pour les anciens templates des modules ============*/
+#usermenu a, #mainmenu a {	display: block;}
+.xo-canvas-column .menuSub { padding-left: 1em;}

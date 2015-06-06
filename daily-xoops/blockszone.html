@@ -1,0 +1,15 @@
+<link href="blocks.css" rel="stylesheet" type="text/css" />
+
+<{if $blocks}>
+	<<{$zoneTag}> class="xo-blockszone x2-secondary<{if $zoneClass}> <{$zoneClass}><{/if}>"<{if $zoneId}> id="<{$zoneId}>"<{/if}>>
+	<{foreach from=$blocks item=block}>
+	<div class="xo-block <{$block.module}>">
+		<{if $block.title}><div class="xo-blocktitle"><{$block.title}></div><{/if}>
+		<div class="xo-blockcontent"><div class="right"><{$block.content}></div>
+		</div>
+		<div class="foot"></div>
+		<div class="bottom" align="center">&nbsp;</div>
+	</div>
+	<{/foreach}>
+	</<{$zoneTag}>>
+<{/if}>

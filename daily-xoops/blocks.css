@@ -1,0 +1,170 @@
+/*========== listes dans les colonnes ==========*/
+.xo-canvas-column ul {
+	list-style-type:				none;
+	padding:							.5em;
+	margin:							0px;
+}
+.xo-canvas-column ul ul {
+	padding-top:					0em;
+	padding-bottom:				0em;
+	padding-left:					1em;
+
+}
+/* ====== format des cellules dans les colonnes ========*/
+.xo-canvas-column .outer, .xo-canvas-column .outer td {
+	background-color:				#f6f6f6;
+	border:							0px none;
+}
+.xo-canvas-column .outer, .xo-canvas-column .outer img {
+	border: 							0 !important;
+	padding:							0;
+	margin:							0;
+}
+/*===== Styles Colonne de Gauche =======*/
+#xo-canvas-leftcolumn {
+	text-align:						left;
+	padding:							10px;
+	background:				inherit;
+	border:							1px solid #000333;
+	color:							#dfdfdf;
+}
+#xocanvas-leftcolumn .bottom {
+	background-image: url(img/images/deco1.gif);
+	background-repeat: no-repeat;
+}
+	
+#xo-canvas-leftcolumn .xo-block {
+	margin-bottom:					10px;
+}
+#xo-canvas-leftcolumn .xo-blocktitle {
+	font-family:					"Courier New", Courier, monospace;
+	font-size:						1.1em;
+	font-weight:					bold;
+	padding-top: 8px;
+	padding-left: 14px;
+	border: 1px solid #000333;
+}
+#xo-canvas-leftcolumn .xo-blocktitle:first-letter {
+	color: 							#000000;
+	font-size: 						1.1em;
+	background-color: 			inherit;
+}
+#xo-canvas-leftcolumn .xo-blockcontent {
+	min-height:						60px;
+	padding:						0.5em;
+	padding-left: 12px;
+	font-size: 0.9em;
+	border: 1px solid #000333;
+}
+* html #xo-canvas-leftcolumn .xo-blockcontent { height: 110px;}
+#xo-canvas-leftcolumn .xo-blockcontent a {
+	color: #404040;
+}
+#xo-canvas-leftcolumn .xo-blockcontent a:hover {
+	color: #000000;
+	border-left: 3px solid #000333;
+}
+#xo-canvas-leftcolumn img {
+	border: 							1px solid #000333;
+	padding: 						3px;
+	margin: 							3px 3px 0 7px;
+}
+#xo-canvas-leftcolumn img:hover {border: 1px solid #000333;}
+#xo-canvas-leftcolumn .foot {
+	padding:							0.5em;
+	margin-bottom: 2px;
+	background-image: url(img/images/deco1.gif);
+	background-repeat: no-repeat;
+	height: 35px;
+	padding-top: 5px;
+	background-position: center;
+}
+/*======== Styles Colonne de Droite ========*/
+#xo-canvas-rightcolumn {
+	text-align:						left;
+	padding:							10px;
+	background:				transparent;
+	border:							1px solid #000333;
+	color:							#dfdfdf;
+	width: 200px;
+}
+#xo-canvas-rightcolumn .right {
+	width: 180px;
+}
+#xo-canvas-rightcolumn .xo-block {
+	margin-bottom:					10px;
+}
+#xo-canvas-rightcolumn a {}
+#xo-canvas-rightcolumn a:hover {}
+#xo-canvas-rightcolumn .xo-blocktitle {
+	font-family:					"Courier New", Courier, monospace;
+	font-size:						1.1em;
+	font-weight:					bold;
+	padding-top: 10px;
+	padding-left: 14px;
+	height: auto;
+	border: 1px solid #000333;
+}
+#xo-canvas-rightcolumn .xo-blocktitle:first-letter {
+	color: 							#000000;
+	font-size: 						1.3em;
+	background-color: 			inherit;
+}
+#xo-canvas-rightcolumn .xo-blockcontent {
+	padding:							0.5em;
+	padding-left: 12px;
+	font-size: 0.9em;
+	border: 1px solid #000333;
+}
+#xo-canvas-rightcolumn .foot {
+	padding:							0.5em;
+	margin-bottom: 2px;
+	background-image: url(img/images/deco1.gif);
+	background-repeat: no-repeat;
+	height: 35px;
+	padding-top: 5px;
+	background-position: center;
+}
+#xo-canvas-rightcolumn img {
+	border: 							1px solid #ccc;
+	padding: 						3px;
+	margin: 							3px 3px 0 7px;
+}
+#xo-canvas-rightcolumn img:hover {border: 1px solid #6A95AD;}
+/* ======= Styles du "Contenu Centre" ===========*/
+.xo-block ul {
+	margin:							0px;
+	padding:							0px;
+	list-style-type:				none;
+	border:							1px solid #000333;
+}
+#xo-page .xo-blockszone .xo-blocktitle {
+	font-family:					Geneva, Arial, Helvetica, sans-serif;
+	font-size:						1.2em;
+	font-weight:					bold;
+	color: 							#404040;
+	margin:							0px .5em;
+	padding:							0px .25em;
+	border-bottom: 1px dashed #000333;
+}
+#xo-page .xo-blockszone .xo-blockcontent {
+	padding:							0.5em;
+	text-align: 					justify;
+	background-color: 			inherit;
+}
+#xo-page .xo-blockszone .xo-blockcontent img {
+	border: 							1px solid #ccc;
+	padding: 						3px;
+	margin: 							3px 3px 0 7px;
+}
+#xo-page .xo-blockszone .xo-blockcontent a {}
+#xo-page .xo-blockszone .xo-blockcontent a:hover {}
+
+#xo-page .outer {
+	color:							#333;
+	background-color: 			#F2F2F2;
+	background-image:				url(img/content3.png);
+	font-size:						0.9em;
+}
+#xo-page .outer th {font-size:0.9em;}
+
